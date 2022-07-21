@@ -42,70 +42,202 @@
         padding: 0;
         font-family: var(--fuente-secundaria);
     }
+    .row{
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .error{
+        margin: 20px 10px;
+        font-size: 1rem;
+    }
 /*Fin Globales*/
 
 /*login*/
     .hero-login{
         width: 100%;
         height: 100vh;
-        background-image: url('../img/banner-login.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom;
         display: flex;
     }
-    .hero-login .login{
-        width: 35%;
-        min-height: 60vh;
-        background-color: rgba(255,255,255,.8);
-        border-radius: 50px;
-        margin: auto;
-        padding: 20px; 
-        display: flex;       
-    }
-    .hero-login .login form{
+    #form-login-desktop{
         margin: auto;
         width: 100%;
         text-align: center;
         font-size: 2rem;
     }
-    .hero-login .login form .btn{
+    #form-login-desktop .btn{
         border: 3px solid var(--color-secundario);
         margin-top:20px;
         font-size: 1.5rem;
     }
-    .hero-login .login form .btn:hover{
+    #form-login-desktop .btn:hover{
         background-color: var(--color-secundario);
         color: var(--color-terciario);
         transition: 1s;
     }
-    .hero-login .login form label{
+    #form-login-desktop label{
         text-align: left;
         width: 100%;
         color: var(--color-primario);
     }
-    .hero-login .login form input{
+    #form-login-desktop input{
         background-color: rgba(235, 202, 85, .5);
         color: var(--color-primario);
         font-size: 1rem;
         border: 1px solid var(--color-primario);
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
-    .hero-login .login form input:focus{
-        box-shadow: 0 0 0 0.15rem rgb(207, 118, 144);
+    #form-login-desktop input:focus{
+        box-shadow: 0 0 0 0.15rem #cf7690;
         border: 1px solid var(--color-secundario);
     }
+    #desktop{
+        display: block;
+        min-height: 100vh;
+        background-image: none;
+    }
+    #desktop .hero-login{
+        background-image: url('../img/banner-login-desktop.jpg');
+        background-position: top right;
+    }
+    @media(max-width: 768px){
+        #mobile{
+            display: block;
+        }
+        #desktop{
+            background-image: url('../img/banner-login-desktop.jpg');
+            background-position: top right;
+            display: flex;
+        }
+    }
 /*fin Login*/
+    main{
+        background: -webkit-gradient(linear, left top, right top, color-stop(46%, rgba(0, 192, 187, 0.2)), color-stop(78%, rgba(255, 80, 79, 0.2)));
+        background: linear-gradient(90deg, rgba(0, 192, 187, 0.2) 46%, rgba(255, 80, 79, 0.2) 78%);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main .container{
+        border-radius: 30px;
+        background-color: transparent;
+        background-image: url('../img/banner-register.png');
+        background-position: bottom right;
+        background-size: cover;
+        padding: 100px;
+        -webkit-box-shadow: 1px 3px 14px -2px rgba(0,0,0,0.74); 
+        box-shadow: 1px 3px 14px -2px rgba(0,0,0,0.74);
+    }
+    main .container h2{
+        color: #f0f0f0;
+        text-align: center;
+    }
+    main .container label{
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    main .container #form-register input{
+        color: var(--color-primario);
+        font-size: 1rem;
+        border: none; 
+        border: 1px solid #fff;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    main .container #form-register input:focus{
+        box-shadow: 0 0 0 0.15rem #cf7690;
+        border-bottom: 1px solid var(--color-secundario);
+    }
+    #form-register .btn{
+        margin-top:20px;
+        font-size: 1.5rem;
+        background-color: #f0f0f0;
+        color: var(--color-secundario);
+    }
+    #form-register .btn:hover{
+        background-color: var(--color-secundario);
+        color: var(--color-terciario);
+        transition: .5s;
+    }
+/*Inicio register*/
+
+/*Fin register*/
 
 /*Home*/
     .container-fluid{
         padding: 10px 20px;    
     }
-    .col-4{
+    .img{
+        height: 35vh;
+        background-color: #f0f0f0;
+        margin: 10px auto;
+        width: 100%;
+    }
+    .img div{
+        width: fit-content;
+        height: max-content;
+        margin: auto;
+        
+    }
+    .img h1{
+        margin: auto;
+        width: fit-content;
+        color: rgba(0, 0, 0, .2);
+        font-size: 5rem;
+    }
+    .navbar{
+        height: fit-content;
+        background-color: #cf7690;
         padding: 10px;
     }
-    .col-4 .img{
-        height: 40vh;
-        background-color: #f0f0f0;
+    .navbar-brand{
+        width: 100px;
     }
+    .navbar-collapse{
+        flex-grow: 0;
+    }
+    .navbar ul li a{
+        font-size: 1.5rem;
+        color: var(--color-terciario);
+    }
+    .navbar ul li a.disabled{
+        color: var(--color-terciario)!important;
+    }
+    .hero{
+        background-image: url('../img/banner1.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .hero2{
+        background-image: url('../img/banner2.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .hero3{
+        background-image: url('../img/banner3.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .hero4{
+        background-image: url('../img/banner4.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .hero5{
+        background-image: url('../img/banner5.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .hero6{
+        background-image: url('../img/banner6.png');
+        background-position: center;
+        background-size: cover;
+    }
+    #exit:hover{
+        cursor: pointer;
+    }
+    
 /*Fin Home*/

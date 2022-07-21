@@ -1,0 +1,7 @@
+2022-07-07 02:23:28 ---> Error en el query: ( You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@outlook.com' at line 1 ) SELECT COUNT(*) AS totalEmail FROM mqr_users WHERE email = ccob_07@outlook.com
+2022-07-07 02:27:55 ---> Error en el query: ( Table 'u890646885_monster.mqr_users' doesn't exist ) SELECT COUNT(*) AS totalEmail FROM mqr_users WHERE email = "ccob_07@outlook.com";
+2022-07-07 02:29:29 ---> Error en el query: ( Table 'u890646885_monster.mqr_users' doesn't exist ) SELECT COUNT(*) AS totalEmail FROM mqr_users WHERE email = "ccob_07@outlook.com";
+2022-07-07 02:50:55 ---> Error en el query: ( Unknown column 'ID' in 'field list' ) SELECT ID FROM mqr_users WHERE user = 'uniformelk'
+2022-07-07 02:51:37 ---> Error en el query: ( Unknown column 'user' in 'where clause' ) SELECT id_user FROM mqr_users WHERE user = 'uniformelk'
+2022-07-07 02:52:41 ---> Error en el query: ( Unknown column 'user_pass' in 'where clause' )  SELECT COUNT(*) AS totalp FROM mqr_users WHERE ((username = 'uniformelk') AND (user_pass = 'affa17bcce1094238278e65707dcd6ed')) || ((email = 'uniformelk') AND (password = 'affa17bcce1094238278e65707dcd6ed'))
+2022-07-07 02:53:18 ---> Error en el query: ( Unknown column 'user_pass' in 'where clause' )  SELECT COUNT(*) AS totalp FROM mqr_users WHERE ((username = 'uniformelk') AND (user_pass = 'affa17bcce1094238278e65707dcd6ed')) || ((email = 'uniformelk') AND (password = 'affa17bcce1094238278e65707dcd6ed'))
