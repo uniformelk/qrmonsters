@@ -6,7 +6,7 @@ class UI{
       divMensaje.classList.add('text-center', 'alert', 'd-block', 'col-12');
   
       if(tipo === 'error'){
-        divMensaje.classList.add('alert-danger', 'error');
+        divMensaje.classList.add('alert-danger', 'error', 'm-auto', 'w-75');
       }
       if(tipo === 'success'){
         divMensaje.classList.add('alert-success', 'alert', 'mt-3');
