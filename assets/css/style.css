@@ -216,33 +216,7 @@
     .navbar ul li a.disabled{
         color: var(--color-terciario)!important;
     }
-    .hero{
-        background-image: url('../img/banner1.png');
-        background-position: center;
-        background-size: cover;
-    }
-    .hero2{
-        background-image: url('../img/banner2.png');
-        background-position: center;
-        background-size: cover;
-    }
-    .hero3{
-        background-image: url('../img/banner3.png');
-        background-position: center;
-        background-size: cover;
-    }
-    .hero4{
-        background-image: url('../img/banner4.png');
-        background-position: center;
-        background-size: cover;
-    }
-    .hero5{
-        background-image: url('../img/banner5.png');
-        background-position: center;
-        background-size: cover;
-    }
-    .hero6{
-        background-image: url('../img/banner6.png');
+    .hero{      
         background-position: center;
         background-size: cover;
     }
